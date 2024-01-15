@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Training Recorder</title>
+    <link rel="stylesheet" href="calorie-style.css">
+    <link rel="stylesheet" href="../common-style.css">
+    <link rel="stylesheet" href="../menu/menu-style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-name">
+            <a href="../account/account.html">
+                <div class="user-icon-2"></div>
+            </a>
+            <h1>Добавить прием пищи</h1>
+        </div>
+
+        <div class='calorie-container'>
+            <h1>Калькулятор калорий</h1>
+
+            <div id="meal-input">
+                <label for="meal-name">Название приема пищи:</label>
+                <input type="text" id="meal-name" placeholder="Завтрак | Обед | Ужин | Перекус">
+
+                <button onclick="addFood()" id="add-button">Открыть меню добавления</button>
+                <div id="meal-data">
+                </div>
+            </div>
+            <p id="error-message"></p>
+            <ul id="meal-list"></ul>
+
+            <button onclick="calculateTotal()">Сохранить результаты</button>
+
+            <div id="result"></div>
+        </div>
+
+    </div>
+    <div id="menu-container"></div>
+
+    <script src="calorie-script.js"></script>
+    <script src="../menu/menu-script.js"></script>
+
+
+</body>
+
+</html>
